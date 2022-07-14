@@ -47,9 +47,16 @@ $colorTitulo: rgb(90, 29, 48);
 $colorSubtitulo: rgb(58, 23, 105);
 $fondoParrafo:rgb(110, 45, 45);
 $borderBox: 4px solid black;
+@mixin parametros {
+    display: block;
+    margin: 200px auto;
+    padding: 10px 10px;
+    font-size: 30px;
+    text-align: center;
+}
 section {
     background-color: $colorFondo;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     h2{
         color: $colorTitulo;
@@ -86,6 +93,19 @@ section {
             height: 400px;
             width: 600px;
         }
+    }
+    ul{
+        @include parametros;
+        $coloresLista: (1:rgb(255, 255, 255), 2:red, 3:blue, 4:violet, 5:orange, 6: yellow, 7: blueviolet, 8: rgb(87, 66, 42), 9: rgb(48, 48, 87), 10: white );
+    
+        @each $nombre, $valor in $coloresLista {
+            .li-#{$nombre} {
+                background-color: $valor;
+            }
+            
+        }
     
     }
+
+    
 }

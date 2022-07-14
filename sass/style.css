@@ -49,7 +49,7 @@ table {
 
 section {
   background-color: rgb(52, 125, 128);
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 section h2 {
@@ -84,4 +84,41 @@ section div img {
   margin: auto;
   height: 400px;
   width: 600px;
+}
+section ul {
+  display: block;
+  margin: 200px auto;
+  padding: 10px 10px;
+  font-size: 30px;
+  text-align: center;
+}
+section ul .li-1 {
+  background-color: rgb(255, 255, 255);
+}
+section ul .li-2 {
+  background-color: red;
+}
+section ul .li-3 {
+  background-color: blue;
+}
+section ul .li-4 {
+  background-color: violet;
+}
+section ul .li-5 {
+  background-color: orange;
+}
+section ul .li-6 {
+  background-color: yellow;
+}
+section ul .li-7 {
+  background-color: blueviolet;
+}
+section ul .li-8 {
+  background-color: rgb(87, 66, 42);
+}
+section ul .li-9 {
+  background-color: rgb(48, 48, 87);
+}
+section ul .li-10 {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
